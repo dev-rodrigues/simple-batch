@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: simple-batch-alura
+  batch:
+    jdbc:
+      initialize-schema: always
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/batch?useSSL=false&allowPublicKeyRetrieval=true
+    jdbcUrl: jdbc:mysql://127.0.0.1:3306/batch?useSSL=false&allowPublicKeyRetrieval=true
+    username: my_user
+    password: my_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
