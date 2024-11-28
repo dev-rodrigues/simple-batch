@@ -1,5 +1,6 @@
-package com.example.simplebatchalura;
+package com.example.simplebatchalura.application.domain.mapper;
 
+import com.example.simplebatchalura.application.domain.Importacao;
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
 import org.springframework.batch.item.file.transform.FieldSet;
 import org.springframework.lang.NonNull;
@@ -11,7 +12,6 @@ import java.time.format.DateTimeFormatter;
 public class ImportacaoMapper implements FieldSetMapper<Importacao> {
 
     private DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-    private DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
     @Override
     public Importacao mapFieldSet(@NonNull FieldSet fieldSet) {

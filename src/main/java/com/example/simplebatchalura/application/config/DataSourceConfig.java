@@ -1,4 +1,4 @@
-package com.example.simplebatchalura;
+package com.example.simplebatchalura.application.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;

@@ -1,4 +1,4 @@
-package com.example.simplebatchalura;
+package com.example.simplebatchalura.application.domain;
 
 import jakarta.persistence.*;
 
@@ -28,6 +28,8 @@ public class Importacao {
     private Double valor;
 
     private LocalDateTime horaImportacao;
+
+    private Double taxaAdm;
 
     public Long getId() {
         return id;
@@ -99,5 +101,13 @@ public class Importacao {
 
     public void setHoraImportacao(LocalDateTime horaImportacao) {
         this.horaImportacao = horaImportacao;
+    }
+
+    public Double getTaxaAdm() {
+        return taxaAdm;
+    }
+
+    public void setTaxaAdm(Double taxaAdm) {
+        this.taxaAdm = taxaAdm;
     }
 }
